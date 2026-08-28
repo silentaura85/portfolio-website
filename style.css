@@ -270,33 +270,12 @@ hr {
     margin: 40px auto;
 }
 
-/* For Mobile */
-
-@media (min-width: 320px) and (max-width: 480px) {
-
+    /* For mobile */
+ @media (min-width:320px)  and (max-width:480) {
     .main-container {
         flex-direction: column;
     }
-
-    .right-container,
-    .left-container {
-        width: 100%;
+    .right-container,.left-container {
+       width:100%;
     }
-
-    .left-container img {
-        width: 250px;
-        height: auto;
-    }
-}
-
-/* For Tablet */
-
-@media (min-width: 481px) and (max-width: 1024px) {
-    /* You can adjust your layout, font sizes, image sizes, etc. */
-}
-
-/* For Desktop */
-.main-container {
-    display: flex;
-    gap: 50px;
-}
+ } 
