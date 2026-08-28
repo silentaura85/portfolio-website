@@ -1,25 +1,302 @@
-
 * {
-    margin:0;
+    margin: 0;
     box-sizing: border-box;
 }
+
 body {
-    display:flex;
+    display: flex;
     flex-direction: column;
-    font-family:sans-serif;
+    font-family: sans-serif;
+    color: white;
+    /* background-color: #415dda; */
 }
 
 header {
-    position:sticky;
-    top:0;
-    display:flex;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: #1d3186;
+}
+
+header>img {
+    margin-left: 30px;
+    padding: 30px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    margin-right: 50px;
+    gap: 20px;
+    cursor: pointer;
+}
+
+/* Hero-Section */
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width:100%;
-    height:100px;
-    background-color:#1d3186;
-    color:white;    
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)),
+
+        url(images/ChatGPT\ Image\ Aug\ 27\,\ 2026\,\ 08_08_59\ PM.png)
 }
-body {
-    background-color:#415dda ;
+
+.hero-content {
+    text-align: center;
+}
+
+.hero-content>h1 {
+    margin-bottom: 15px;
+    animation: fadeUp 0.6s ease;
+}
+
+.hero-content>p {
+    margin-bottom: 25px;
+    animation: fadeUp 0.6s ease 0.2s both;
+}
+
+.hero-content>button {
+    width: 100px;
+    height: 40px;
+    font-size: 14px;
+    border-radius: 8px;
+    background-color: whitesmoke;
+    animation: fadeUp 0.6s ease 0.4s both;
+}
+
+.hero-content>button>a {
+    text-decoration: none;
+    color: black;
+}
+
+button:hover {
+    background-color: cadetblue;
+    border-color: #1d3186;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* About-Section */
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 550px;
+    background-color: #415dda;
+}
+
+.about-section>h3 {
+    padding: 40px;
+    font-size: 24px;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 20px 40px; */
+    gap: 60px;
+}
+
+.right-container {
+    margin-left:0 60px;
+}
+
+
+.right-container>p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.right-container>ul {
+    margin-top: 10px;
+}
+
+.left-container>img {
+    border: 2px;
+    border-radius: 10px;
+    object-fit: cover;
+
+}
+
+/* Skill-Section */
+.skill-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    background-color: #3a54c9;
+}
+
+.skill-container>h2 {
+    margin-top: 30px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 30px 40px;
+    gap: 20px;
+}
+
+.card {
+    height: auto;
+    background-color: white;
+    color: black;
+    padding: 40px 60px;
+    font-size: 18px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.card>h3 {
+    margin-bottom: 20px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* Project-Section */
+
+.project-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #415dda;
+    width: 100%;
+    height: 500px;
+}
+
+.container-1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1.3fr);
+    padding: 30px 50px;
+    gap: 40px;
+}
+
+.card-1 {
+    height: 250px;
+    padding: 40px 50px;
+    text-align: center;
+    background-color: aliceblue;
+    color: black;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.card-1>h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.card-1>p {
+    margin-bottom: 30px;
+}
+
+.card-1>button {
+    width: 100px;
+    height: 30px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.card-1>button>a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 250px;
+    padding: 0 50px;
+    background-color: #3a54c9;
+}
+
+footer>h3 {
+    font-size: 32px;
+    color: whitesmoke;
+    text-shadow: 2px 2px 5px black;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    margin-right: 40px;
+    margin: 40px;
+}
+
+.footer-content>a {
+    text-decoration: none;
+    font-size: 18px;
+    color: whitesmoke;
+
+}
+
+hr {
+    border: none;
+    height: 3px;
+    background-color: white;
+    width: 70%;
+    margin: 40px auto;
+}
+
+/* For Mobile */
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    .main-container {
+        flex-direction: column;
+    }
+
+    .right-container,
+    .left-container {
+        width: 100%;
+    }
+
+    .left-container img {
+        width: 250px;
+        height: auto;
+    }
+}
+
+/* For Tablet */
+
+@media (min-width: 481px) and (max-width: 1024px) {
+    /* You can adjust your layout, font sizes, image sizes, etc. */
+}
+
+/* For Desktop */
+.main-container {
+    display: flex;
+    gap: 50px;
 }
