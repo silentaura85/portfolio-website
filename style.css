@@ -5,13 +5,38 @@
   }
 
   body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-      background-color: #0F172A;
-      padding: 40px;
+      font-family:sans-serif;
+      background-color: #415a77;
   }
+  header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height:100px;
+    background-color:#0d1b2a;
+}
+
+header>img {
+    margin-left: 30px;
+    padding: 30px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    margin-right: 50px;
+    gap: 20px;
+    cursor: pointer;
+    color:white;
+}
+
 
   h1 {
       text-align: center;
+    /* padding-top: 20px; */
       margin-bottom: 40px;
       color:white;
   }
@@ -25,10 +50,9 @@
 
   .project-card {
       width: 500px;
-      height: 500px;
+      min-height:450px;
       background-color: #F8FAFC;
       border-radius: 10px;
-      padding: 0;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
       overflow: hidden;
   }
@@ -72,3 +96,41 @@
   .project-card a:hover {
       background-color: #444;
   }
+  footer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 250px;
+    padding: 0 50px;
+    background-color:#415a77;
+    color:white;
+}
+
+footer>h3 {
+    font-size: 32px;
+    color: white;
+    text-shadow: 2px 2px 5px #1b263b;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    margin-right: 40px;
+    margin: 40px;
+}
+
+.footer-content>a {
+    text-decoration: none;
+    font-size: 18px;
+    color:#e0e1dd;
+
+}
+
+hr {
+    border: none;
+    height: 3px;
+    background-color:white;
+    width: 70%;
+    margin: 40px auto;
+}
