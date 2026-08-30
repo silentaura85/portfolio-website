@@ -28,6 +28,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 15;
     width: 100%;
     height: 100px;
     background-color: var(--primary-color);
@@ -35,7 +36,7 @@ header {
 
 header>img {
     margin-left: 30px;
-    padding: 30px;
+    padding: 35px;
 }
 
 nav {
@@ -43,7 +44,12 @@ nav {
     flex-direction: row;
     margin-right: 50px;
     gap: 20px;
-    cursor: pointer;
+   
+}
+nav >a {
+    color:var(--white-color);
+    text-decoration: none;
+     cursor: pointer;
 }
 
 /* Hero-Section */
@@ -58,7 +64,7 @@ nav {
     background: linear-gradient(rgba(0, 0, 0, 0.6),
             rgba(0, 0, 0, 0.6)),
 
-        url(images/ChatGPT\ Image\ Aug\ 27\,\ 2026\,\ 08_08_59\ PM.png)
+        url(../images/bg-image.png)
 }
 
 .hero-content {
