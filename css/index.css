@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+body 
+
 * {
     margin: 0;
     box-sizing: border-box;
@@ -17,7 +21,7 @@
 }
 
 body {
-    font-family: sans-serif;
+    font-family:Inter ,sans-serif;
     color: var(--white-color);
     /* background-color: #415dda; */
 }
@@ -220,7 +224,7 @@ button:hover {
 }
 
 .card-1 {
-    height: 250px;
+    height: auto;
     padding: 40px 50px;
     text-align: center;
     background-color: var(--light-card-color);

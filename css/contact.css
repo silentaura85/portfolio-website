@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 * {
     margin: 0;
     box-sizing: border-box;
@@ -13,7 +14,7 @@
 }
 
 body {
-    font-family: sans-serif;
+    font-family:Inter ,sans-serif;
     color: var(----white-color);
     /* background-color: #415dda; */
 }
@@ -63,7 +64,7 @@ nav>a {
 .container {
     text-align: center;
     width: 400px;
-    height: 600px;
+    height: 650px;
     margin: 50px auto;
     padding: 30px;
     background-color: var(--white-color);
